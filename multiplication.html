@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="multiplication(10)">Click me</button>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <button onclick="mymul()">Execute with JS </button>
+
+
+
+</body>
+<script>
+    function multiplication(a, b) {
+        if (b == undefined) {
+            b = 20;
+            document.write(a * b);
+        }
+    }
+
+    // mymul()
+
+    function mymul() {
+        var x = 20;
+        var y = 30;
+        document.getElementById("result").innerHTML = x * y;
+    }
+
+    document.getElementById("result1").innerHTML = x;
+    document.getElementById("result1").innerHTML = y;
+</script>
+
+</html>
