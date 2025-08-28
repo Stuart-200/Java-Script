@@ -6,16 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>JavaScript For Loop</h1>
-    <p id = "demo"></p>
+    <h1> Demonstration of loop using JavaScript</h1>
+    <p>Number from 1 to 10</p>
+    <p id="loop"></p>
+    
 </body>
 <script>
-    var fruits =["Apple", "Mango", "Grapes", "Watermelon", "Jack Fruit", "Banana"];
+    
+    // animal      0        1         2          3       4        5.         6        7     8          9       
+    var animal =["Lion", "Tiger", "Elephant", "Deer", "Zebra", "Giraffe", "Monkey", "Dog", "Cat",   "Rabbit",]; 
 
-    for (i = 0; i < 6;i++){
-        var text = fruits[i] + "<br>";
+    for(i = 0; i < 11; i++){
+
+        var text = animal[i] + "<br>";
         document.write(text);
+       
     }
+   
+    var day ;
+    switch(new Date().getDay()){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+            
+    }
+    document.write("Today is " + day + "<br>");
 
+    var date = new Date();
+    document.write("And today's date is " + date.getDate());
 </script>
 </html>
