@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1> JavaScript Array</h1>
-    <p id = "demo"></p>
+    <h1>JavaScript objects Data Structure and Array</h1>
 </body>
 <script>
-    var fruits =['Banana', 'Orange', 'Apple', 'Mango', 'Kiwi', 'Papaya'];
-    document.getElementById("demo").innerHTML = "Healthy fruit is " + fruits[5];
+    var student = {
+        name: 'Stuart',
+        age: 16,
+        grade: 9,
+        hobbies: 'reading',
+        fav_game: 'Football',
+    };
+
+    var color = ['red', 'green', 'blue', 'yellow'];
+
+    document.write("Student name is : " + student.name ,"<br>","Student hobbie is :" + student.hobbies,"<br>") ;
+    document.write("Before Poping the Color are : " + color.join("^")+ "<br>");
+    document.write("My favorite color id :" + color[2] + "<br>")
+    color.pop();
+    document.write("After Poping the Color are : " + color.join("#"));
+    
 </script>
+
 </html>

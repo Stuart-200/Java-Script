@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-
-
-    <h1> JavaScript with Math object </h1>
-
-
-
+    <h1>JavaScript Math objective</h1>
+    <p id="demo"></p>
 </body>
 <script>
-    var value = Math.acos(-1);
-    document.write("Demo1 Test Value : " + value + "<br>")
+    function sumAll(){
+       var sum = 0; 
+    for( i = 0; i < arguments.lenght; i++){
+        sum += arguments[1];
+    }
 
-    var value = Math.asin(1);
-    document.write("Demo2 Test Value : " + value + "<br>")
+        return sum;
+    }
+    
 
+
+    document.getElementById("demo").innerHTML = sumAll(1,123,500,115,44,88);
+    var value =Math.asin(-1);
+    document.write("Sin -1 is :  " + value + "<br>");
+    var value1 =Math.acos(1);
+    document.write("Cos 1 is : " + value1 + "<br>");
+    var value2 =Math.atan(45);
+    document.write("Tan 45 is : " + value2 + "<br>");    
+    document
+    
 </script>
-
 </html>
