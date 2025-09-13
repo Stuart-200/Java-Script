@@ -6,11 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="one">Welcome</h1>
-    <p>This is an introductory website</p>
-    <script>
-        var text = document.getElementById("one").innerHTML;
-        alert("the first information is" + text);
-    </script>
+    <form action="action_page.php" method="post">
+
+
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email address" id="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password" required>
+
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Your Age" id="age" required>
+
+
+    <button type="submit">Login</button> 
+    <div id="messageBox" style="color: red; margin-top: 10px;"></div>
+  </div>
+
+  
+</form>
+    
 </body>
+<script src="script.js"></script>
 </html>
