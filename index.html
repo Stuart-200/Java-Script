@@ -6,29 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Javascript Data types</h1>
-    <script>
-        var a = 8;
-        var b = 10;
-        var d = null;
-        var e; //undefined
-        {
-            let a = 2
-            let b = 8
-
-        }
-        document.write("a and b are equal : " + (a == b));
-        document.write("<br>")
-        document.write("The value of d is : " + d);
-        document.write("<br>")
-        document.write("The value of e is : " + e);
-        document.write("<br>")
-        document.write("The type of a is : " +  a);
-        document.write("<br>")
-        document.write("The value of b is : " + b);
-
-    </script>
-
-    
+    <h1>Javascript Datatypes,Let keyword and Loops</h1>
+    <p id ="demo"></p>
 </body>
+<script>
+    var i;
+    var text = "";
+    {
+        let i = 0;
+        while (i <10){
+            text += "The values inside the block:" + i + "<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+        document.getElementById("demo").innerHTML("The value outside the block:" + i);
+    }
+</script>
 </html>
