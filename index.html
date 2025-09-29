@@ -6,20 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Javascript Datatypes,Let keyword and Loops</h1>
-    <p id ="demo"></p>
+    <h1>JavaScript Array Sort</h1>
+    <p>Click the button to sort the array in ascending order.</p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <p id="demo"></p>
 </body>
 <script>
-    var i;
-    var text = "";
-    {
-        let i = 0;
-        while (i <10){
-            text += "The values inside the block:" + i + "<br>";
-            i++;
-        }
-        document.getElementById("demo").innerHTML = text;
-        document.getElementById("demo").innerHTML("The value outside the block:" + i);
+    var ponits = [5,7,9,26,20,30,10,5,6,50];
+    document.getElementById("demo").innerHTML = ponits;
+    function ascending(){
+        ponits.sort(function(a,b){return a-b});
+        document.getElementById("demo").innerHTML = ponits;
+    }
+    function descending(){
+        ponits.sort(function(a,b){return b-a});
+        document.getElementById("demo").innerHTML = ponits;
     }
 </script>
 </html>
