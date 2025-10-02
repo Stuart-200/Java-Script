@@ -6,33 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <p id ="details"></p>
-    <p id = "greetings"></p>
-    <script>
-        class Student {
-            constructor(name){
-                this.studentName = name;
-            
-            }
-            static hello() {
-                return "Hello";
-            }
-            present() {
-                return 'My name is ' + this.studentName;
-        
-            }
-        }
-        class Grade extends Student {
-            constructor(name, grade) {
-                super(name);
-                this.studentGrade = grade;
-            }
-            show() {
-                return this.present() + ', from ' + this.studentGrade;
-            }
-        }
-        let myStudent = new Grade('John', "grade 8 ");
-        document.getElementById("details").innerHTML = Student.hello();
-    </script>
+    <h1>JavaScript Array Sort</h1>
+    <p>Click the button to sort the array in ascending order.</p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <p id="demo"></p>
 </body>
+<script>
+    var ponits = [5,7,9,26,20,30,10,5,6,50];
+    document.getElementById("demo").innerHTML = ponits;
+    function ascending(){
+        ponits.sort(function(a,b){return a-b});
+        document.getElementById("demo").innerHTML = ponits;
+    }
+    function descending(){
+        ponits.sort(function(a,b){return b-a});
+        document.getElementById("demo").innerHTML = ponits;
+    }
+</script>
 </html>
