@@ -1,0 +1,25 @@
+body{
+    background-color:lightgrey; 
+}
+.text1{
+    color:red;
+    text-decoration: overline;
+}
+.text2{
+    color:green;
+    text-decoration: line-through;
+}
+.text3{
+    color:blue;
+    text-decoration: underline;
+}
+.text4{
+    color:orange;
+    text-decoration: underline overline;
+}
+.p1{
+    font-family:"times new roman",serif;
+}
+.p2{
+    font-family:arial,sans-serif;
+}
