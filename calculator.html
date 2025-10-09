@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
 </head>
-
 <body>
-    <h1>Simple Calculator</h1>
-
-    <p> <strong>It can perform any operation using javascript</strong></p>
-    <p id="add"></p>
-    <p id="sub"></p>
-    <p id="mul"></p>
-    <p id="div"></p>
-    <script>
-        var num1 = 20;
-        var num2 = 5;
-        //This is for the header
-        document.getElementById("add").innerHTML = "Javascript Comments";
-        var add = num1 + num2;
-        document.getElementById("add").innerHTML = "The total sum of " + num1 + " and " + num2 + " is: " + add;
-        
-        document.getElementById("sub").innerHTML = "Javascript Comments";
-        var sub = num1 - num2;
-        document.getElementById("sub").innerHTML = "The subtraction of 20 and 5 is: " + sub;
-
+    <div class="wrapper">
     
-        var mul = num1 * num2;
-        document.getElementById("mul").innerHTML = "The multiplication of 20 and 5 is: " + mul;
-
-        document.getElementById("div").innerHTML = "Javascript Comments";
-        var div = num1 / num2;
-        document.getElementById("div").innerHTML = "The division of 20 and 5 is: " + div;
-
-
-
-
-
-
-
-
-
-    </script>
-
+        <div class="container">
+    
+            <h1>Calculator</h1>
+    
+            <div class="row">
+    
+                <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+    
+                <input type="button" value="+" onclick="setScreenValue('+')" />
+                <input type="button" value="1" onclick="setScreenValue('1')" />
+                <input type="button" value="2" onclick="setScreenValue('2')" />
+                <input type="button" value="3" onclick="setScreenValue('3')" />
+                <input type="button" value="-" onclick="setScreenValue('-')" />
+            </div>
+    
+            <div class="row">
+                <input type="button" value="4" onclick="setScreenValue('4')" />
+                <input type="button" value="5" onclick="setScreenValue('5')" />
+                <input type="button" value="6" onclick="setScreenValue('6')" />
+                <input type="button" value="x" onclick="setScreenValue('*')" />
+            </div>
+    
+            <div class="row">
+                <input type="button" value="7" onclick="setScreenValue('7')" />
+                <input type="button" value="8" onclick="setScreenValue('8')" />
+                <input type="button" value="9" onclick="setScreenValue('9')" />
+                <input type="button" value="/" onclick="setScreenValue('/')" />
+            </div>
+    
+            <div class="row">
+                <input type="button" value="%" onclick="setScreenValue('%')" />
+                <input type="button" value="0" onclick="setScreenValue('0')" />
+                <input type="button" value="." class="dot" onclick="setScreenValue('.')" />
+                <input type="button" value="=" onclick="calculateResult()" />
+            </div>
+    
+            <div class="row">
+                <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button" />
+            </div>
+    
+        </div>
+    </div>
 </body>
-
 </html>
