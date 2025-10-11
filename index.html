@@ -6,22 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>JavaScript Array Sort</h1>
-    <p>Click the button to sort the array in ascending order.</p>
-    <button onclick="ascending()">Ascending order</button>
-    <button onclick="descending()">Descending order</button>
-    <p id="demo"></p>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css" />
+    
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+    
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+            rel="stylesheet" />
+    
+        <title>Portfolio</title>
+    </head>
+    
+    <body>
+        <!-- Main Container -->
+        <div class="main-container container">
+            <h2 class="text-white">Hello, I'm</h2>
+            <h1 class="text-warning m-heading">Codingal Technologies</h1>
+            <h2 class="text-white">Coding Education</h2>
+        </div>
+    </body>
+    
+    </html>
 </body>
-<script>
-    var ponits = [5,7,9,26,20,30,10,5,6,50];
-    document.getElementById("demo").innerHTML = ponits;
-    function ascending(){
-        ponits.sort(function(a,b){return a-b});
-        document.getElementById("demo").innerHTML = ponits;
-    }
-    function descending(){
-        ponits.sort(function(a,b){return b-a});
-        document.getElementById("demo").innerHTML = ponits;
-    }
-</script>
 </html>
