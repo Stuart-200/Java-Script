@@ -1,0 +1,58 @@
+body {
+  background: #e8e8ef;
+  color: #0e0e0e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #121237;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* light gray background with black text per user request */
+  background: #f2f2f2;
+  color: #000000;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+}
+
+/* Backwards compatible jumbotron class */
+.jumbotron {
+  padding: 4rem 0;
+  /* gray background with black text to match hero */
+  background: #c5c4c4;
+  color: #000000;
+
+}
+
+.btn-primary {
+  background-color: #00ffff;
+  border: none;
+  color: #121237;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00cccc;
+  color: #fff;
+}
