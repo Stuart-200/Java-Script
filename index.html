@@ -4,93 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    
-    <!-- My CSS -->
-    
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- Font Awesome -->
-    
-    <script src="https://kit.fontawesome.com/996973c893.js"></script>
-    
-    <!-- Google Fonts -->
-    
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
-        rel="stylesheet" />
 
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
 </head>
 
 <body>
-    
-        <div id="social-media" class="container-fluid">
-
-            <div class="container text-white py-5">
-                <h1 class="text-warning">Social Media</h1>
-                <h1 class="m-heading">Let's be friend</h1>
-
-
-
-                <div class="row pt-5">
-
-                    <div class="col-3 media_link btn">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-start">
-                                <h1 class="m-0 pt-2 text-white">LinkedIn</h1>
-                            </div>
-                            <div class="col-6 d-felx justify-content-end  align-items-center">
-                                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
-                            </div>
-
-                        </div>
-                    </div>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="history"></div>
+                <p id="history-value"></p>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
 
 
-                    <div class="col-3 media_link btn">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-start">
-                                <h1 class="m-0 pt-2 text-white">Github</h1>
-                            </div>
-                            <div class="col-6 d-felx justify-content-end  align-items-center">
-                                <i class="fab fa-github fa-2x text-secondary"></i>
-                            </div>
 
-                        </div>
-                    </div>
 
-                   <div class="col-3 media_link btn">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-start">
-                                <h1 class="m-0 pt-2 text-white">LinkedIn</h1>
-                            </div>
-                            <div class="col-6 d-felx justify-content-end  align-items-center">
-                                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
-                            </div>
+                <div id="keyboard">
 
-                        </div>
-                    </div>
-
-                    <div class="col-3 media_link btn">
-                        <div class="row">
-                            <div class="col-6 d-flex justify-content-start">
-                                <h1 class="m-0 pt-2 text-white">Youtube</h1>
-                            </div>
-                            <div class="col-6 d-felx justify-content-end  align-items-center">
-                                <i class="fab fa-youtube fa-2x text-secondary"></i>
-                            </div>
-
-                        </div>
-                    </div>
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="backspace">CE</button>
+                    <button class="operator" id="percent">%</button>
+                    <button class="operator" id="divide">&#247;</button>
+                    <button class="number" id="7">7</button>
+                    <button class="number" id="8">8</button>
+                    <button class="number" id="9">9</button>
+                    <button class="operator" id="*">&times;</button>
+                    <button class="number" id="4">4</button>
+                    <button class="number" id="5">5</button>
+                    <button class="number" id="6">6</button>
+                    <button class="operator" id="-">-</button>
+                    <button class="number" id="1">1</button>
+                    <button class="number" id="2">2</button>
+                    <button class="number" id="3">3</button>
+                    <button class="operator" id="+">+</button>
+                    <button class="empty"></button>
+                    <button class="number" id="0">0</button>
+                    <button class="empty"></button>
+                    <button class="operator" id="=">=</button>
                 </div>
 
 
             </div>
+
+
+
+
+
         </div>
-    
+
+    </div>
+
+
+
+
 </body>
+
+<script src="script.js"></script>
 
 </html>
