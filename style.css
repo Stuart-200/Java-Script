@@ -1,98 +1,38 @@
-body {
-    font-family: 'Open sans', sans-serif;
-    background-color: rgb(229, 204, 204);
-    background-image: url(calculatorbg.jpeg);
+    body {
+        font-family: "Times New Roman", serif;
+        text-align: center;
+        margin-top: 100px;
+        background-color: #f4f4f4;
+    }
 
-}
+    h2 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
-#container {
-    width: 1000px;
-    height: 550px;
-    background-image: url('calculatorbg.jpeg');
-    margin: 20px auto;
-}
+    input {
+        padding: 8px;
+        width: 180px;
+        border-radius: 6px;
+        border: 1px solid #555;
+    }
 
-#calculator {
-    width: 350px;
-    height: 520px;
-    background-color: rgb(228, 225, 225);
-    margin: 0px auto;
-    top: 20px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
-}
+    button {
+        margin: 10px;
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
 
-#result {
-    height: 120px;
-}
+    button:hover {
+        background-color: #444;
+    }
 
-#history {
-    text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: gray;
-}
-
-#output {
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
-}
-
-#keybord {
-    height: 400px;
-
-}
-
-.operator,
-.number,
-.empty {
-    width: 50px;
-    height: 50px;
-    margin: 15px;
-    float: left;
-    border-radius: 50%;
-    border-width: 0;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.number,
-.empty {
-    background-color: rgb(184, 188, 190)
-}
-
-.number,
-.operator {
-    cursor: pointer;
-}
-
-.operator:active,
-.number:active {
-    font-size: 13px;
-}
-
-button:nth-child(4) {
-    font-size: 20px;
-    background-color: mediumaquamarine
-}
-button:nth-child(8) {
-    font-size: 20px;
-    background-color: rgb(213, 128, 96)
-}
-button:nth-child(12) {
-    font-size: 20px;
-    background-color: rgb(102, 102, 188)
-}
-button:nth-child(16) {
-    font-size: 20px;
-    background-color:rgb(200, 141, 141)
-}
-button:nth-child(20) {
-    font-size: 20px;
-    background-color: rgb(215, 136, 215)
-}
+    p {
+        font-size: 18px;
+        margin-top: 25px;
+    }

@@ -4,60 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Calculator</title>
+    <title>Bank App</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    
 </head>
 
 <body>
-    <div id="container">
+    <h2>Bank App</h2>
 
-        <div id="calculator">
+    <label for="amount">Enter Transaction Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount"><br><br>
 
-            <div id="result">
-                <div id="history">
-                    <p id="history-value"></p>
-                </div>
-                <div id="output">
-                    <p id="output-value"></p>
-                </div>
-            </div>
+    <button onclick="credit()">Credit</button>
+    <button onclick="debit()">Debit</button>
 
+    <p id="balance">Your Account Balance is: Rs. 0</p>
 
-            <div id="keyboard">
-                <button class="operator" id="clear">C</button>
-                <button class="operator" id="backspace">CE</button>
-                <button class="operator" id="%">%</button>
-                <button class="operator" id="/">&#247;</button>
-                <button class="number" id="7">7</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="9">9</button>
-                <button class="operator" id="*">&times;</button>
-                <button class="number" id="4">4</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="6">6</button>
-                <button class="operator" id="-">-</button>
-                <button class="number" id="1">1</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id="3">3</button>
-                <button class="operator" id="+">+</button>
-                <button class="empty" id="empty"></button>
-                <button class="number" id="0">0</button>
-                <button class="empty" id="empty"></button>
-                <button class="operator" id="=">=</button>
-            </div>
+    <script>
+        let balance = 0;
 
+        function credit() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            if (isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid amount");
+                return;
+            }
+            balance += amount;
+            updateBalance();
+        }
 
-        </div>
+        function debit() {
+            let amount = parseFloat(document.getElementById("amount").value);
+            if (isNaN(amount) || amount <= 0) {
+                alert("Please enter a valid amount");
+                return;
+            }
+            if (amount > balance) {
+                alert("Insufficient balance!");
+                return;
+            }
+            balance -= amount;
+            updateBalance();
+        }
 
-
-
-    </div>
-
-
+        function updateBalance() {
+            document.getElementById("balance").textContent =
+                "Your Account Balance is: Rs. " + balance.toFixed(2);
+            document.getElementById("amount").value = "";
+        }
+    </script>
 </body>
-
-<script src="script.js"></script>
 
 </html>
